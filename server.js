@@ -21,7 +21,7 @@ hbs.registerHelper('getCurrentYear',()=>{
 app.get('/',(req,res)=>{
     res.render('home.hbs',{
         pageTitle : "home Page",
-        message : "Welcome to the website"
+        message : "Welcome to this great website"
     })
 })
 

@@ -33,7 +33,7 @@ app.get('/about',(req,res)=>{
 
 app.get('/bad',(req,res)=>{
     res.send({
-        errorMessage : "Something bad happened"
+        errorMessage : "Something bad happened here"
     });
 })
 

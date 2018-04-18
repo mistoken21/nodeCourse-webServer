@@ -13,9 +13,9 @@ app.use((req,res,next)=>{
     fs.appendFileSync('server.log', log + "\n");
     next();
 })
-app.use((req, res, next)=>{
+/* app.use((req, res, next)=>{
     res.render("maintainence.hbs")
-})
+}) */
 app.use(express.static(__dirname + "/public"));
 hbs.registerHelper('getCurrentYear',()=>{
     return new Date().getFullYear();
